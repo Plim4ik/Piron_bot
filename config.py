@@ -8,7 +8,8 @@ ALLOWED_USERS = {
     246039192: "Оксана",
     961519334: "Леонид",
 }
-GROUP_CHAT_ID = 999832526
+
+OWNER:[463863956]
 
 SUBORDINATES = {
     874682911: "Юлия",
@@ -19,3 +20,4 @@ SUBORDINATES = {
 MAIN_PEOPLES = {
     463863956: "Федор",
 }
+
