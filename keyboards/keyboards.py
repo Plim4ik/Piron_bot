@@ -1,6 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.utils.callback_data import CallbackData
-from config import ADMINS, OWNER
+from config import ADMINS
 
 callback_data = CallbackData("action", "command")
 
@@ -10,7 +10,7 @@ def get_start_keyboard(user_id):
     keyboard_start.add(InlineKeyboardButton("🕓 Получить минуты", callback_data=callback_data.new(command="get_minutes")))
     if user_id in ADMINS:
         keyboard_start.add(InlineKeyboardButton("♻️ Обновить Excel", callback_data=callback_data.new(command="update_excel")))
-    if user_id in OWNER or ADMINS:
+    if user_id in ADMINS:
         keyboard_start.add(InlineKeyboardButton("📄 Генерация отчета", callback_data=callback_data.new(command="update_excel")))
 
     return keyboard_start

@@ -1,6 +1,6 @@
 import os
 from aiogram import types
-from data.config import EXCEL_REPORTS_FOLDER, OWNERS
+from config import EXCEL_REPORTS_FOLDER
 from middlewares.report_processing import handle_report_file
 from keyboards import get_back_keyboard
 
